@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>webSoft | Search</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+	<h1 class="display-4" style="font-size: 25px;display: inline-block;">webSoft Search</h1>
+	<button class="btn menu" id="btn">≡</button>
+	<button class="btn close" id="closeBtn" style="display: none;">&times;</button>
+	<ul class="lists" id="lists">
+
+		<li><a href="#">Settings</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</header>
+
+<div class="searchDiv">
+	<form name="searchForm" action="https://www.google.com/search" method="get">
+		<input type="text" class="form-control" placeholder="Search Here" name="q">
+		<input type="submit" class="btn btn-primary search" value="Search">
+	</form>
+</div>
+<footer>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<span><strong>Web Development Client Side</strong></span>
+				<hr>
+				<span>HTML</span>
+				<span>CSS</span>
+				<span>JavaScript</span>
+			</div>
+			<div class="col">
+				<span><strong>Web Development Server Side</strong></span>
+				<hr>
+				<span>PHP</span>
+				<span>ASP.net</span>
+				<span>Node JS</span>
+			</div>
+			<div class="col">
+				<span><strong>Other Skills</strong></span>
+				<hr>
+				<span>Adobe Photoshop</span>
+				<span>Adobe Illustrator</span>
+				<span>Adobe After Effects</span>
+			</div>						
+		</div>
+	</div>
+
+</footer><br>
+<span  style="background: #000;color: #fff;padding: 10px;text-align: center;position: absolute;bottom:-45px;width: 100%;">&copy;2020 webSoft from Atask.inc</span>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var btn=document.getElementById('btn');
+	var lists=document.getElementById('lists');
+	var closeBtn=document.getElementById('closeBtn');
+	btn.addEventListener('click', function(){
+		lists.style.display='block';
+		closeBtn.style.display='block'
+		btn.style.display='none';
+	})
+	closeBtn.addEventListener('click',function(){
+		lists.style.display='none';
+		closeBtn.style.display='none'
+		btn.style.display='block';
+	})
+</script>
+
+</body>
+</html>
